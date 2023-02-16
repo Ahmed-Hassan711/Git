@@ -1,4 +1,9 @@
 const express = require('express');
 
+const app = express();
 
-express().listen(5000);
+app.get('/', (req, res) => {
+    res.send('Home Page');
+});
+
+app.listen(5000);
